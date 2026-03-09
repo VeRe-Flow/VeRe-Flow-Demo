@@ -21,13 +21,12 @@
         <!-- ABSTRACT -->
         <h2>Abstract</h2>
         <p class="abstract">
-            Noise-robust bandwidth expansion (NR-BWE) aims to reconstruct high-fidelity wideband speech from noisy low resolution inputs. 
-            Although flow matching has shown promising performance for speech generation, recovering clean signals under noisy conditions remains challenging.
-            In this work, we reinforce clean signal learning within the flow matching framework through multi-level supervision. 
-            At the velocity level, we propose Velocity Contrastive Regularization (Vecor), 
-            which aligns the predicted velocity with the clean target trajectory while explicitly repelling it from the noisy velocity manifold, thereby enforcing separation in velocity space. To our knowledge, this is the first application of velocity-space contrastive supervision to speech generation.
-    At the representation level, we introduce an auxiliary prediction head that aligns intermediate hidden states with clean self-supervised (SSL) speech representations, encouraging noise-invariant semantic encoding. We further enhance local modeling capacity with convolutional modules and incorporate noise-robust SSL features as conditioning.
-Extensive experiments demonstrate that the proposed method improves perceptual quality, achieving higher mean opinion scores (MOS) and DNSMOS OVRL.
+            Noise-robust bandwidth expansion (NR-BWE) aims to reconstruct high-fidelity wideband speech from noisy low-resolution inputs.
+            While flow matching has shown strong performance for speech generation, accurately recovering clean speech under noisy conditions remains challenging due to ambiguous velocity estimation.
+            In this work, we propose VeRe-Flow, a clean-guided flow matching  that introduces multi-level clean supervision to guide the generative process toward clean speech.
+            At the velocity level, we introduce velocity contrastive regularization, which attracts the predicted velocity toward the clean trajectory while repelling it from noisy manifold.
+            At the representation level, we incorporate a representation alignment objective that aligns intermediate features with clean self-supervised speech representations.
+            Experimental results demonstrate that the proposed method achieves the lowest LSD, the highest DNSMOS OVRL and MOS among NR-BWE baselines. Audio samples are available.
         </p>
 
         <!-- INTRO TEXT -->
