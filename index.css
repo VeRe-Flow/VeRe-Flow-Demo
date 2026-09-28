@@ -249,3 +249,42 @@ img {
     border: none;
     box-shadow: none;
 }
+/* ---------- Link Buttons ---------- */
+.link-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin: 20px 0 28px;
+}
+
+.link-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 1em;
+    text-decoration: none;
+    border: 1px solid transparent;
+    transition: background 0.15s ease;
+}
+
+.link-btn.primary,
+.link-btn.primary:link,
+.link-btn.primary:visited {
+    background: #185340;
+    border-color: #185340;
+    color: #fff;
+}
+
+.link-btn.primary:hover {
+    background: #0f3b2d;
+}
+
+.link-btn.disabled {
+    background: #f6f6f6;
+    border-color: #e2e2e2;
+    color: #8a8a8a;
+    cursor: not-allowed;
+}

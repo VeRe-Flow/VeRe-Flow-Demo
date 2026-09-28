@@ -15,18 +15,20 @@
 <body>
     <div class="section">
         <h1>
-            VeRe-Flow: Guiding Flow Matching toward Clean Speech via Velocity Contrastive and Representation Regularization for Noise-Robust Bandwidth Expansion
+            VeRe-Flow: Guiding Flow Matching toward Clean Speech via Velocity Contrastive Regularization and Representation Alignment for Noise-Robust Bandwidth Expansion
         </h1>
+
+        <!-- LINK BUTTONS -->
+        <div class="link-buttons">
+            <a class="link-btn primary" href="https://arxiv.org/abs/2606.29450" target="_blank" rel="noopener">Read the paper</a>
+            <span class="link-btn disabled" title="16 kHz output model checkpoint will be released">16k Checkpoint · Coming soon</span>
+            <span class="link-btn disabled" title="48 kHz output model checkpoint will be released">48k Checkpoint · Coming soon</span>
+        </div>
 
         <!-- ABSTRACT -->
         <h2>Abstract</h2>
         <p class="abstract">
-            Noise-robust bandwidth expansion (NR-BWE) aims to reconstruct high-fidelity wideband speech from noisy low-resolution inputs.
-            While flow matching has shown strong performance for speech generation, accurately recovering clean speech under noisy conditions remains challenging due to ambiguous velocity estimation.
-            In this work, we propose VeRe-Flow, a clean-guided flow matching  that introduces multi-level clean supervision to guide the generative process toward clean speech.
-            At the velocity level, we introduce velocity contrastive regularization, which attracts the predicted velocity toward the clean trajectory while repelling it from noisy manifold.
-            At the representation level, we incorporate a representation alignment objective that aligns intermediate features with clean self-supervised speech representations.
-            Experimental results demonstrate that the proposed method achieves the lowest LSD, the highest DNSMOS OVRL and MOS among NR-BWE baselines. Audio samples are available.
+            Noise-robust bandwidth expansion aims to reconstruct high-fidelity wideband speech from noisy low-resolution inputs. While flow matching has shown strong performance in speech generation, accurately recovering clean speech from noisy inputs remains challenging due to the ambiguity of velocity estimation under noise. In this work, we propose <b>VeRe-Flow</b>, a clean-guided flow matching framework that introduces multi-level clean supervision to guide the generative process toward clean speech. At the velocity level, we introduce velocity contrastive regularization, which attracts the predicted velocity toward the clean trajectory while repelling it from noisy trajectories. At the representation level, we incorporate representation alignment that aligns intermediate features with clean self-supervised learning representations. The results demonstrate that the proposed method achieves the lowest LSD and highest DNSMOS OVRL among all baselines, and the highest MOS among generative baselines.
         </p>
 
         <!-- INTRO TEXT -->
